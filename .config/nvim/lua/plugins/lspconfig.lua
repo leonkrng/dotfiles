@@ -5,5 +5,6 @@ return {
     require('lsp.lua_ls')
     require('lsp.omnisharp')
     require('lsp.pyright')
+    require('lsp.bashls')
   end,
 }

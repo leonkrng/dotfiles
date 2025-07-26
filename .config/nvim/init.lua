@@ -19,6 +19,8 @@ local servers = {
   "pyright",
   "lua_ls",
   "clangd",
+  "bashls",
+  "omnisharp"
 }
 
 for _, server in ipairs(servers) do
