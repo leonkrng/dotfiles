@@ -10,7 +10,7 @@ return {
       ensure_installed = {
         "bash", "bibtex", "c", "c_sharp", "cpp", "css", "http", "hyprlang", "java",
         "javascript", "json", "json5", "kotlin", "lua", "markdown", "markdown_inline",
-        "python", "rust", "sql", "xml", "yaml",
+        "python", "rust", "sql", "xml", "yaml", "latex", 
       },
       auto_install = true,
       highlight = { enable = true },
