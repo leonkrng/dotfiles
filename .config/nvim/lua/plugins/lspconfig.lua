@@ -8,6 +8,7 @@ return {
             require('lsp.pyright')
             require('lsp.bashls')
             require('lsp.texlab')
+            require('lsp.rust_analyzer') 
         end,
     }
 }
