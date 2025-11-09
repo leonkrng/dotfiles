@@ -1,10 +1,10 @@
  {
-  "layer": "top",
+  "layer": "bottom",
   "position": "top",
 
   "modules-left": [
-    "clock",
-    "pulseaudio"
+    "group/power",
+    "battery",
     ],
 
   "modules-center": [
@@ -12,10 +12,12 @@
     ],
 
   "modules-right": [
-    "battery",
+    "pulseaudio",
     "network",
-    "group/power",
+    "clock",
     ],
+
+
 
   "clock": {
     "interval": 1,
@@ -60,7 +62,7 @@
     "orientation": "horizontal",
     "drawer": {
       "transition-duration":500,
-      "transition-left-to-right": false,
+      "transition-left-to-right": true,
       },
     "modules": [
       "custom/shutdown",
