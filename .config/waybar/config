@@ -1,9 +1,21 @@
  {
   "layer": "top",
   "position": "top",
-  "modules-left": ["clock", "pulseaudio"],
-  "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["battery", "network"],
+
+  "modules-left": [
+    "clock",
+    "pulseaudio"
+    ],
+
+  "modules-center": [
+    "hyprland/workspaces"
+    ],
+
+  "modules-right": [
+    "battery",
+    "network",
+    "group/power",
+    ],
 
   "clock": {
     "interval": 1,
@@ -41,7 +53,35 @@
   "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
   "tooltip-format-ethernet": "{ifname} ",
   "tooltip-format-disconnected": "Disconnected",
-  "max-length": 50
+  "max-length": 50,
   },
+
+  "group/power":{
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration":500,
+      "transition-left-to-right": false,
+      },
+    "modules": [
+      "custom/shutdown",
+      "custom/reboot",
+      "custom/logout",
+      ]
+  },
+
+  "custom/shutdown":{
+    "format" : "  󰐥  ",
+    "on-click": "shutdown -h now",
+    },
+  "custom/logout":{
+    "format" : "  󰍃  ",
+    "on-click": "hyprctl dispatch exit",
+    },
+
+  "custom/reboot":{
+    "format" : "    ",
+    "on-click": "reboot",
+    },
+    
 }
 
