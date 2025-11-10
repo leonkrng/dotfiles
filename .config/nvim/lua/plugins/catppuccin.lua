@@ -4,7 +4,15 @@ return {
     lazy = false,
     name = "catppuccin",
     priority = 1000,
-    config = function()
+
+    opts = {
+      transparent_background = true,
+    },
+
+    config = function(_, opts)
+
+      --- Enabling transparent background
+      --- require("catppuccin").setup(opts)
 
       local hour = tonumber(os.date("%H"))
 
@@ -14,5 +22,6 @@ return {
         vim.cmd.colorscheme("catppuccin-latte")
       end
     end,
+
   }
 }
