@@ -1,0 +1,26 @@
+window#waybar {
+  /*background: rgba(20, 20, 20, 0.5);*/
+  background:rgba(106, 151, 157, 0.5);
+  font-size: 11px;
+  color: white;
+} 
+
+
+#audio, #network, #battery, #clock, #power {
+  padding: 0px 10px 0px 10px;
+}
+
+
+#workspaces button * {
+  color: white;
+}
+
+#workspaces .workspace-label{
+  padding: 0px 10px 0px 10px; 
+}
+
+#workspaces button.active * {
+  color: white;
+  border-bottom: 1px solid; 
+  border-radius: 2px;
+}
