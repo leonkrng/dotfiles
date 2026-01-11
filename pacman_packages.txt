@@ -1,0 +1,32 @@
+# Install the packages with: 
+# grep -vE '^[[:space:]]*($|#)' pacman_packages.txt | xargs -r sudo pacman -S --needed --noconfirm
+
+# Essentials
+git
+neovim
+firefox
+unzip
+rsync
+man-pages
+tldr
+tree
+fzf
+proton-vpn-cli 
+firewalld
+kitty
+
+
+# Cli-Menus
+bluetui 
+wiremix 
+impala 
+yazi 
+ncdu 
+btop
+
+# Hyprland
+hyprlock
+hypridle
+hyprpaper
+waybar
+wofi
