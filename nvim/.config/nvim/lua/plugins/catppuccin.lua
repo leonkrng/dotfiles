@@ -16,7 +16,7 @@ return {
 
       local hour = tonumber(os.date("%H"))
 
-      if hour >= 20 or hour < 9 then
+      if hour >= 18 or hour < 9 then
         vim.cmd.colorscheme("catppuccin-frappe")
       else
         vim.cmd.colorscheme("catppuccin-latte")

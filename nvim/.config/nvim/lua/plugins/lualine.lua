@@ -4,7 +4,7 @@ return {
     local hour = tonumber(os.date("%H"))
     local theme
 
-    if hour >= 20 or hour < 9 then
+    if hour >= 18 or hour < 9 then
       theme = 'dracula'
     else
       theme = 'onelight'
