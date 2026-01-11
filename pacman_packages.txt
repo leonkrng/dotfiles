@@ -23,6 +23,8 @@ impala
 yazi 
 ncdu 
 btop
+mpd
+rmpc
 
 # Hyprland
 hyprlock
