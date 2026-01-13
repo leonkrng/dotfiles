@@ -16,6 +16,13 @@ vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+
+-- Fix Shift-Tab für backwards indentation
+vim.keymap.set('i', '<S-Tab>', '<C-d>', { noremap = true, silent = true })
+
+-- Additional indentation Keymap
+vim.keymap.set('i', '<C-l>', '<C-t>', {noremap = true, silent = true})
+
 vim.wo.number = true
 
 -- Use system clipboard
