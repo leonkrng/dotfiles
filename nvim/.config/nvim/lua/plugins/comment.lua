@@ -14,11 +14,9 @@ return {
       local api = require("Comment.api")
       local map_opts = { noremap = true, silent = true }
 
-      -- Normal Mode: aktuelle Zeile kommentieren / entkommentieren
       vim.keymap.set("n", "<C-k>c", api.comment.linewise.current, map_opts)
       vim.keymap.set("n", "<C-k>u", api.uncomment.linewise.current, map_opts)
 
-      -- Visual Mode: Auswahl kommentieren / entkommentieren
       vim.keymap.set(
         "v",
         "<C-k>c",
