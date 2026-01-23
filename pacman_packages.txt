@@ -6,6 +6,8 @@ git
 neovim
 firefox
 unzip
+p7zip
+unrar
 rsync
 man-pages
 tldr
