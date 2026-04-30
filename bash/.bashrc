@@ -11,6 +11,7 @@ alias bluetooth='bluetui'
 alias audio='wiremix'
 alias wifi='impala'
 alias music='kew'
+alias explorer='yazi'
 alias LetItRip='~/Projects_Bash/LetItRip/main.sh'
 PS1='[\u@\h \W]\$ '
 . "$HOME/.cargo/env"
