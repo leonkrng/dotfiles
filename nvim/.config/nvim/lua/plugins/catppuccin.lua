@@ -1,27 +1,16 @@
 return {
-  {
-    "catppuccin/nvim",
-    lazy = false,
-    name = "catppuccin",
-    priority = 1000,
+    {
+        "catppuccin/nvim",
+        lazy = false,
+        name = "catppuccin",
+        priority = 1000,
 
-    opts = {
-      transparent_background = true,
+        opts = {
+            transparent_background = true,
+        },
+
+        config = function(_, opts)
+           vim.cmd.colorscheme("catppuccin-frappe")
+        end,
     },
-
-    config = function(_, opts)
-
-      --- Enabling transparent background
-      --- require("catppuccin").setup(opts)
-
-      local hour = tonumber(os.date("%H"))
-
-      if hour >= 18 or hour < 9 then
-        vim.cmd.colorscheme("catppuccin-frappe")
-      else
-        vim.cmd.colorscheme("catppuccin-latte")
-      end
-    end,
-
-  }
 }

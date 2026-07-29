@@ -1,6 +1,5 @@
-local lspconfig = require('lspconfig')
+local lspconfig = require("lspconfig")
 
 lspconfig.bashls.setup({
-  capabilities = require("cmp_nvim_lsp").default_capabilities(),
+    capabilities = require("cmp_nvim_lsp").default_capabilities(),
 })
-
