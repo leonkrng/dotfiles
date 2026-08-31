@@ -12,7 +12,7 @@ hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.layout("fullscreen"))
 hl.bind(mainMod .. " + TAB", hl.dsp.exec_cmd("hyprshot -m region"))
 hl.bind(mainMod .. " + CONTROL + L", hl.dsp.exec_cmd("hyprlock"))
-hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("--class clipse -e 'clipse'"))
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(terminal .. " --class clipse 'clipse'"))
 
 -- Move focus with mainMod + arrow keys / vimMotions
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
